@@ -39,7 +39,9 @@ function CompanyForm(props) {
           onChange={props.handleChange}
         />
         {props.editMode ? (
-          <button onClick={props.saveCompany}>Save</button>
+          <button onClick={props.saveCompany} className="btn">
+            Save
+          </button>
         ) : (
           ""
         )}

@@ -4,6 +4,7 @@ import Welcome from "./components/Welcome";
 import General from "./components/General";
 import Education from "./components/Education";
 import Professional from "./components/Professional";
+import CompleteResume from "./components/CompleteResume";
 
 class App extends React.Component {
   constructor() {
@@ -74,13 +75,37 @@ class App extends React.Component {
     }
   };
 
+  completeResume = (companies) => {
+    this.setState({
+      level: "complete",
+      professional: companies,
+    });
+  };
+
+  editSection = (level) => {
+    this.setState({
+      mode: "edit",
+      level: level,
+    });
+  };
+
+  saveSection = (event) => {
+    event.preventDefault();
+    this.setState({
+      mode: "new",
+      level: "complete",
+    });
+  };
+
   renderComponent(level) {
     const data = {
       level: level,
+      mode: this.state.mode,
       handleChange: this.handleChange,
       handleCancel: this.handleCancel,
       levelObject: this.state[level],
       handleClick: this.handleClick,
+      saveSection: this.saveSection,
     };
 
     if (level === "general") {
@@ -88,7 +113,17 @@ class App extends React.Component {
     } else if (level === "education") {
       return <Education data={data} />;
     } else if (level === "professional") {
-      return <Professional data={data} />;
+      return (
+        <Professional
+          data={data}
+          completeResume={this.completeResume}
+          companies={this.state.professional}
+        />
+      );
+    } else if (level === "complete") {
+      return (
+        <CompleteResume data={this.state} editSection={this.editSection} />
+      );
     } else {
       return <Welcome createResume={this.createResume} level={level} />;
     }

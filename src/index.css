@@ -12,6 +12,7 @@ header {
   background-color: #f86833;
   text-align: center;
   height: 100px;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -20,12 +21,16 @@ header {
 
 .card {
   width: 90%;
-  margin: 100px auto;
+  margin: 30px auto;
   background-color: #31bebe;
   min-height: 200px;
-  padding: 40px;
+  /* padding: 10px; */
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 5px;
+}
+
+.card-content {
+  padding: 30px;
 }
 
 .company-card {
@@ -33,6 +38,7 @@ header {
   margin: 20px auto;
   background-color: #d8d4d4;
   padding: 10px;
+  padding-bottom: 20px;
 }
 
 .company-field {
@@ -40,6 +46,14 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-align: left;
+  margin-top: 5px;
+}
+
+.fa-icon {
+  margin-top: 10px;
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
 }
 
 textarea {
@@ -53,14 +67,27 @@ textarea {
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
+  /* display: block; */
+  background-color: #1de27f;
 }
 
 .btn-primary {
   background-color: #6090ea;
+  /* width: 100%; */
 }
 
 .btn-danger {
   background-color: #ee3860;
+}
+
+.add-company {
+  background-color: #f86833;
+  /* float: right; */
+  width: 90%;
+}
+
+.btn-resume {
+  width: 90%;
 }
 
 form {

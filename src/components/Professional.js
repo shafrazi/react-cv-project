@@ -17,7 +17,7 @@ class Professional extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      companies: [],
+      companies: props.companies,
       currentCompany: {
         companyName: "",
         position: "",
@@ -92,8 +92,6 @@ class Professional extends React.Component {
     });
   };
 
-  saveCompany = () => {};
-
   renderCompanyComponents = () => {
     const companyComponents = this.state.companies.map((company, index) => {
       return (
@@ -128,19 +126,32 @@ class Professional extends React.Component {
   render() {
     return (
       <div className="card">
-        <h2>Professional Information</h2>
-        {this.renderCompanyComponents()}
-        {!this.state.editMode ? (
-          <CompanyForm
-            company={this.state.currentCompany}
-            handleChange={this.handleChange}
-          />
-        ) : (
-          ""
-        )}
-        <button className="btn btn-primary" onClick={this.addCompany}>
-          Add company
-        </button>
+        <div className="card-content">
+          <h2>Professional Information</h2>
+          {this.renderCompanyComponents()}
+          {!this.state.editMode ? (
+            <CompanyForm
+              company={this.state.currentCompany}
+              handleChange={this.handleChange}
+            />
+          ) : (
+            ""
+          )}
+          <button
+            className="btn btn-primary add-company"
+            onClick={this.addCompany}
+          >
+            Add company
+          </button>
+          <button
+            className="btn btn-primary btn-resume"
+            onClick={() => {
+              this.props.completeResume(this.state.companies);
+            }}
+          >
+            View my resume
+          </button>
+        </div>
       </div>
     );
   }
