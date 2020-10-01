@@ -1,0 +1,72 @@
+* {
+  font-family: Futura;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  background-color: #f86833;
+  text-align: center;
+  height: 100px;
+}
+
+.logo {
+  padding-top: 20px;
+}
+
+.card {
+  width: 90%;
+  margin: 100px auto;
+  background-color: #31bebe;
+  min-height: 200px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 5px;
+}
+
+.company-card {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #d8d4d4;
+  padding: 10px;
+}
+
+.company-field {
+  padding-left: 35px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+}
+
+textarea {
+  border: none;
+  resize: vertical;
+}
+
+.btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #6090ea;
+}
+
+.btn-danger {
+  background-color: #ee3860;
+}
+
+form {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
