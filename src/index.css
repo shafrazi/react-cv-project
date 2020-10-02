@@ -97,3 +97,9 @@ form {
   grid-template-columns: 1fr;
   row-gap: 10px;
 }
+
+@media (min-width: 921px) {
+  .card {
+    width: 75%;
+  }
+}
