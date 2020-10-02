@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-cv-project/static/css/main.a9e7205f.chunk.css",
+    "main.js": "/react-cv-project/static/js/main.d6f4cca3.chunk.js",
+    "main.js.map": "/react-cv-project/static/js/main.d6f4cca3.chunk.js.map",
+    "runtime-main.js": "/react-cv-project/static/js/runtime-main.8c985207.js",
+    "runtime-main.js.map": "/react-cv-project/static/js/runtime-main.8c985207.js.map",
+    "static/js/2.ca16e0b8.chunk.js": "/react-cv-project/static/js/2.ca16e0b8.chunk.js",
+    "static/js/2.ca16e0b8.chunk.js.map": "/react-cv-project/static/js/2.ca16e0b8.chunk.js.map",
+    "index.html": "/react-cv-project/index.html",
+    "precache-manifest.df5628704d680bc4727177c4345ae81c.js": "/react-cv-project/precache-manifest.df5628704d680bc4727177c4345ae81c.js",
+    "service-worker.js": "/react-cv-project/service-worker.js",
+    "static/css/main.a9e7205f.chunk.css.map": "/react-cv-project/static/css/main.a9e7205f.chunk.css.map",
+    "static/js/2.ca16e0b8.chunk.js.LICENSE.txt": "/react-cv-project/static/js/2.ca16e0b8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c985207.js",
+    "static/js/2.ca16e0b8.chunk.js",
+    "static/css/main.a9e7205f.chunk.css",
+    "static/js/main.d6f4cca3.chunk.js"
+  ]
+}
